@@ -4,6 +4,7 @@ import About from '../pages/About/About';
 import OurSolutions from '../pages/OurSolutions/OurSolutions';
 import InAction from '../pages/InAction/InAction';
 import Technology from '../pages/Technology/Technology';
+import Benefits from '../pages/Benefits/Benefits';
 
 const Home = () => {
  return (
@@ -13,6 +14,7 @@ const Home = () => {
    <OurSolutions></OurSolutions>
    <InAction></InAction>
    <Technology></Technology>
+   <Benefits></Benefits>
   </div>
  );
 };
