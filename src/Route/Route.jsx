@@ -5,6 +5,9 @@ import Home from "../components/Home";
 import MainLayout from "../components/MainLayout";
 import Dashboard from "../Dashboard/Dashboard";
 import MainContent from "../Dashboard/MainContent";
+import Login from "../pages/Login_Register/Login";
+import Register from "../pages/Login_Register/Register";
+import VerifyOtp from "../pages/Login_Register/VerifyOtp";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +19,18 @@ const router = createBrowserRouter([
       element:<Home></Home>
      }
     ]
+  },
+  {
+    path:'login',
+    element:<Login></Login>
+  },
+  {
+    path:'register',
+    element:<Register></Register>
+  },
+  {
+    path:'verify',
+    element:<VerifyOtp></VerifyOtp>
   },
   {
     path:'/dashboard',
