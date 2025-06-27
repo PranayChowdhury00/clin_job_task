@@ -5,6 +5,7 @@ import OurSolutions from '../pages/OurSolutions/OurSolutions';
 import InAction from '../pages/InAction/InAction';
 import Technology from '../pages/Technology/Technology';
 import Benefits from '../pages/Benefits/Benefits';
+import CaseUse from '../pages/CaseUse/CaseUse';
 
 const Home = () => {
  return (
@@ -15,6 +16,7 @@ const Home = () => {
    <InAction></InAction>
    <Technology></Technology>
    <Benefits></Benefits>
+   <CaseUse></CaseUse>
   </div>
  );
 };
