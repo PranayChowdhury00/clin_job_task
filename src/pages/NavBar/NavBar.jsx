@@ -19,7 +19,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="bg-gray-600 text-white shadow-sm px-4 py-2 relative">
+    <div className="bg-gray-600 text-white shadow-sm px-4 py-2  sticky top-0">
       <div className="flex justify-between items-center">
         {/* Logo Left */}
         <div className="flex items-center gap-2">
