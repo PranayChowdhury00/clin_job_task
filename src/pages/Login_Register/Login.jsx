@@ -26,9 +26,8 @@ const Login = () => {
       if (!response.ok) {
         setError(data.detail || "Login failed. Please try again.");
       } else {
-        // ✅ Optionally save token to localStorage or context
-        localStorage.setItem("token", data.access || "");
-        // ✅ Redirect to dashboard
+        // ✅ Correctly store the accessToken
+        localStorage.setItem("token", data.accessToken || "");
         navigate("/dashboard");
       }
     } catch (err) {
@@ -73,12 +72,14 @@ const Login = () => {
             </div>
             <a href="#" className="text-sm text-blue-600 hover:underline">Forgot Password?</a>
           </div>
+
           <button
             onClick={handleLogin}
             className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700"
           >
             Login
           </button>
+
           <p className="text-sm text-blue-600 mt-4 text-center">
             <Link to="/register" className="hover:underline">Create account, sign up</Link>
           </p>
