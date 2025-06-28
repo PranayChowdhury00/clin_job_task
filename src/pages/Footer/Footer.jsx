@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -26,12 +27,15 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center gap-4 mt-6">
-          <button className="btn btn-outline text-white border-white hover:bg-white hover:text-gray-900 transition-all duration-300">
+           <Link to="login"><button className="btn btn-outline text-white border-white hover:bg-white hover:text-gray-900 transition-all duration-300">
             Login
-          </button>
-          <button className="btn px-6 py-2 bg-cyan-500 text-white font-semibold rounded shadow-md transition-all duration-300 hover:shadow-cyan-400/50 hover:shadow-lg active:translate-y-[-2px]">
+          </button></Link>
+          <Link to='register'>
+          <button
+            className="btn px-6 py-2 bg-cyan-500 text-white font-semibold rounded shadow-md transition-all duration-300 hover:shadow-cyan-400/50 hover:shadow-lg active:translate-y-[-2px]"
+          >
             SignUp
-          </button>
+          </button></Link>
         </div>
       </div>
 

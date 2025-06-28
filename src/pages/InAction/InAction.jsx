@@ -42,26 +42,7 @@ const InAction = () => {
         {!isCollapsed && (
           <div className="bg-gray-800 rounded-lg p-6">
             {activeTab === "TranscriptX" && (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="text-xl font-semibold mb-4 text-sky-300">DocDoSoR&*'s Dictation (Audio Input Simulation)</h3>
-                  <div className="bg-gray-900 p-4 rounded-lg text-gray-300 text-sm max-h-[300px] overflow-y-auto">
-                    <p>Okay, uh, patient is Sarah Chen, DOB 3/22/1978... (text trimmed)</p>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-4 text-sky-300">TranscriptX - AI-Generated Note</h3>
-                  <div className="bg-gray-900 p-4 rounded-lg text-gray-300 text-sm max-h-[300px] overflow-y-auto">
-                    <p><strong>Patient:</strong> Sarah Chen<br />
-                      <strong>DOB:</strong> 03/22/1978<br />
-                      <strong>Date of Service:</strong> October 26, 2023</p>
-                    <p><strong>Chief Complaint:</strong><br />
-                      Right knee pain x 3 months.</p>
-                    <p><strong>Subjective:</strong><br />
-                      Patient reports... (text trimmed)</p>
-                  </div>
-                </div>
-              </div>
+            <div className=""></div>
             )}
 
             {activeTab === "Chartwright" && (
